@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <script>
+        function myFunction(msg) {
+            alert(msg);
+        }
+        function login() {
+            let username = document.getElementById("name").value;
+            let id = document.getElementById("id").value;
+            let age = document.getElementById("age").value;
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+            console.log("Username: " + username, "ID: " + id, "Age: " + age, "Email: " + email, "Password: " + password);
+        }
+    </script>
+    <style>
+        div {
+            margin-top: 100px;
+        }
+        label {
+            display: inline-block;
+            width: 100px;
+            text-align: right;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        button {
+            margin-left: 110px;
+            padding: 5px 10px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Login Form</h1>
+        <label for="name">Username:</label>
+        <input id="name" type="text" placeholder="Enter your name"><br>
+        <label for="id">ID:</label>
+        <input id="id" type="text" placeholder="Enter your ID"><br>
+        <label for="age">Age:</label>
+        <input id="age" type="number" placeholder="Enter your age"><br>
+        <label for="email">Email:</label>
+        <input id="email" type="email" placeholder="Enter your email"><br>
+        <label for="password">Password:</label>
+        <input id="password" type="password" placeholder="Enter your password"><br>
+        <button id="mybtn" onclick="myFunction('Thank you for login')">Login</button>
+    </div>
+</body>
+</html>
