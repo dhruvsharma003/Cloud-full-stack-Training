@@ -14,6 +14,7 @@ public class challenge {
                 System.out.print("*");
             }System.out.println();
         }
+        
         //challenge 2
         int[] arr={2,1,4,5,6};
         int sum=0;

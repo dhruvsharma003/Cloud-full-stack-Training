@@ -23,6 +23,7 @@ public class second {
         System.out.print("Enter a number: ");
         int num=sc.nextInt();
         System.out.println("You entered: " + num);
+        
 
 
     }
